@@ -4,7 +4,31 @@ Create beautful 2d canvas patterns using a grid of simple geometric shapes.
 
 ![Screenshot](./doc/shapes.png)
 
-Example layout file:
+Using a theme file:
+
+```js
+// theme2.js
+
+// define our theme
+class ColourTheme {
+    constructor() {
+        this.colors = [
+            '#1d3752',
+            '#214d72',
+            '#2c7695',
+            '#50bfc3',
+            '#eeeeee',
+            '#ffffff',
+        ];
+    }
+}
+
+export default (Vue) => {
+    Vue.prototype.$theme = new ColourTheme();
+};
+```
+
+And a layout file:
 
 ```js
 // layout1.js
