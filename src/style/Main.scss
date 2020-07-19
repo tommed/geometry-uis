@@ -1,0 +1,16 @@
+$color0: #ff3600;
+$color1: #ffc200;
+$color2: #008592;
+$color3: #0f154d;
+$color4: #ff75a1;
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+@import './App.scss';

@@ -1,0 +1,36 @@
+.main-layout {
+
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+
+    .main-content {
+        order: 1;
+        flex-grow: 1;
+        width: 50vw;
+        height: 100vh;
+        padding: 20px 5vw;
+    }
+
+    .geometry {
+        order: 2;
+        flex-grow: 1;
+        width: 50vw;
+        height: 100vh;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .main-layout {
+        .main-content {
+            width: 100vw;
+        }
+        .geometry {
+            display: none;
+        }
+    }
+  }
+
+@import './Geometry/All.scss';

@@ -1,0 +1,15 @@
+export default (Vue) => {
+    Vue.component('Matrix', () => import('./Matrix.vue'))
+    Vue.component('Blank', () => import('./Blank.vue'))
+    Vue.component('Fill', () => import('./Fill.vue'))
+    Vue.component('ThumbRight', () => import('./ThumbRight.vue'))
+    Vue.component('ThumbLeft', () => import('./ThumbLeft.vue'))
+    Vue.component('SemiBase', () => import('./SemiBase.vue'))
+    Vue.component('SemiLeft', () => import('./SemiLeft.vue'))
+    Vue.component('SemiTop', () => import('./SemiTop.vue'))
+    Vue.component('PlainCircle', () => import('./PlainCircle.vue'))
+    Vue.component('CircleWithStroke', () => import('./CircleWithStroke.vue'))
+    Vue.component('CircleTailed', () => import('./CircleTailed.vue'))
+    Vue.component('StripesBR', () => import('./StripesBR.vue'))
+    Vue.component('LayerFromConfig', () => import('./LayerFromConfig.vue'))
+}
